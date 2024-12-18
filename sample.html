@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const helloWorld = () => 'Hello, World! 🌎'
+    const cars = [" Ford", " Volvo", " BMW"," Chevrolet"," Toyota"," Tesla"];
+    const model = ["Focus"," Yaris"," Corolla"," Malibu","Model S"]
+    var nombre = ["Diego"]
+    const helloCar = () => 'Hello, i have a' + cars[5]+ ' ' + model[4]+' and my name is: ' + nombre[0]; 
+
+    let cars1 = [
+        {"Marca" : "Ford", "Modelo" : "Focus","Año":2001},
+        {"Marca" : "Chevrolet", "Modelo" : "Malibu","Año":2008},
+        {"Marca" : "Toyota", "Modelo" : "Corolla","Año":2015},
+        {"Marca" : "Tesla", "Modelo" : "Model S","Año":2017}
+    ]
+
+
+
+    console.log(cars1);
+
+    let filteredCars = cars1.filter(car => car.Año <= 2012);
+    
+    let transformedCars = filteredCars.map(car => ({Marca: car.Marca, Modelo: car.Modelo}));
+    console.log(transformedCars);
+    
+
+
+</script>
+</html>
